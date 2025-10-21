@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expo-Suiza 2025</title>
+    <link rel="stylesheet" href="assets/css/styles.css"> 
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+</head>
+<body>
+    <div id="photobooth-container">
+        
+        <video id="webcam-stream" autoplay playsinline></video>
+        
+        <div id="marco-selector">
+            <h3>Elegí tu Marco preferido:</h3>
+            <div id="marco-opciones">
+                </div>
+        </div>
+
+        <button id="capture-button">Sacar Foto</button>
+        
+        <canvas id="photo-canvas" style="display:none;"></canvas>
+
+        <div id="overlay-message" class="hidden">
+            <h2 id="countdown-text"></h2>
+            <div id="qr-display" class="hidden"> 
+                
+                <button id="close-qr-button" class="close-button">×</button> 
+                
+                <h3>✅ ¡LISTO! ESCANEA EL QR ✅</h3>
+                <div id="qrcode"></div>
+                <p>Busca tu foto con este ID: <strong id="photo-id-text"></strong></p>
+                <small>Las fotos estarán disponibles en la carpeta compartida después del evento.</small>
+            </div>
+        </div>
+        
+        <a id="download-link" style="display:none;"></a>
+    </div>
+
+    <script src="assets/js/app.js"></script> 
+</body>
+</html>
