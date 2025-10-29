@@ -22,17 +22,13 @@
         
         <canvas id="photo-canvas" style="display:none;"></canvas>
 
-        <div id="overlay-message" class="hidden">
+
+       <div id="overlay-message" class="hidden">
+            <button id="close-qr-button" class="close-button">×</button> 
+            
             <h2 id="countdown-text"></h2>
-            <div id="qr-display" class="hidden"> 
-                
-                <button id="close-qr-button" class="close-button">×</button> 
-                
-                <h3>✅ ¡LISTO! ESCANEA EL QR ✅</h3>
-                <div id="qrcode"></div>
-                <p>Busca tu foto con este ID: <strong id="photo-id-text"></strong></p>
-                <small>Las fotos estarán disponibles en la carpeta compartida después del evento.</small>
-            </div>
+            
+            <p>ID de foto: <strong id="photo-id-text"></strong></p>
         </div>
         
         <a id="download-link" style="display:none;"></a>
