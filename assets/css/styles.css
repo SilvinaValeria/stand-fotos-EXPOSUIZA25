@@ -4,8 +4,10 @@ body {
     align-items: flex-start;
     min-height: 100vh;
     margin: 0;
-    background-color: #333;
-    font-family: sans-serif;
+    background-image: url(../img/background.png);
+    background-position: center;
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
 }
 
@@ -17,6 +19,34 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center; 
+}
+
+/*---- ESTILOS DEL HEADER ----*/
+
+header {
+    text-align: center;
+    width: 100%;
+}
+
+header h1 {
+    font-size: 2.8em;
+    color: #ffd700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+header h2{
+    font-size: 1.4em;
+    font-weight: 600;
+    color: #fefeff;
+    display: inline-block;
+}
+
+header p{
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #fefeff;
 }
 
 /* ---- ESTILOS DEL VIDEO ---- */
@@ -38,7 +68,7 @@ h3{
     margin-top: 5px;
     padding: 15px 30px;
     font-size: 1.2em;
-    background-color: #00f;
+    background-color: rgb(0, 183, 255);
     color: white;
     border: none;
     border-radius: 5px;

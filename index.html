@@ -1,39 +1,39 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Expo-Suiza 2025</title>
-    <link rel="stylesheet" href="assets/css/styles.css"> 
-    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
-</head>
-<body>
-    <div id="photobooth-container">
-        
-        <video id="webcam-stream" autoplay playsinline></video>
-        
-        <div id="marco-selector">
-            <h3>Elegí tu Marco preferido:</h3>
-            <div id="marco-opciones">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Expo-Suiza 2025</title>
+        <link rel="stylesheet" href="assets/css/styles.css"> 
+        <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+    </head>
+    <body>
+        <div id="photobooth-container">
+            <header>
+                <h1> ✨ EXPO-SUIZA 2025 ✨</h1>
+                <h2>¡Creá tu recuerdo inolvidable en un solo clic! 📸</h2>
+                <p>Se podrán descargar mañana a través del siguiente link: "bit.ly/fotosexposuiza25"</p>
+            </header>
+
+            <video id="webcam-stream" autoplay playsinline></video>
+
+            <div id="marco-selector">
+                <h3>Elegí tu Marco preferido:</h3>
+                <div id="marco-opciones"></div>
+            </div>
+
+            <button id="capture-button">Sacar Foto</button>
+
+            <canvas id="photo-canvas" style="display:none;"></canvas>
+
+            <a id="download-link" style="display: none;"></a> 
+
+            <div id="overlay-message" class="hidden">
+                <button id="close-qr-button" class="close-button">x</button> 
+                <h2 id="countdown-text"></h2>
                 </div>
         </div>
 
-        <button id="capture-button">Sacar Foto</button>
-        
-        <canvas id="photo-canvas" style="display:none;"></canvas>
-
-
-       <div id="overlay-message" class="hidden">
-            <button id="close-qr-button" class="close-button">×</button> 
-            
-            <h2 id="countdown-text"></h2>
-            
-            <p>ID de foto: <strong id="photo-id-text"></strong></p>
-        </div>
-        
-        <a id="download-link" style="display:none;"></a>
-    </div>
-
-    <script src="assets/js/app.js"></script> 
-</body>
+        <script src="assets/js/app.js"></script> 
+    </body>
 </html>
